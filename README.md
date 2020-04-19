@@ -12,3 +12,7 @@ Page Object model and python unittest.
 - Remove Product from favorites.
 
 
+If you want to run it, you should type:
+python <module-name.py> 
+If you want to run it just a class, you should type:
+python <module-name.py> <class-name> 
