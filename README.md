@@ -1,5 +1,6 @@
-# N11 Automation Task with Selenium
-N11 Automation Task. Using Selenium and Python. 
+# N11.com Automation Task with Selenium
+N11.com Selenium Automation Task. 
+Using Selenium and Python. 
 Page Object model and python unittest.
 
   **Task Steps**
