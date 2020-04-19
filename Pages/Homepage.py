@@ -48,8 +48,6 @@ class Homepage():
         driver.execute_script("arguments[0].scrollIntoView();", menu_elem)
         action_hover  = ActionChains(driver).move_to_element(menu_elem)
         action_hover.perform()
-        #click wishlist
-        # WebDriverWait(driver, 20).until(EC.element_to_be_clickable(*self.WISHLIST))
         driver.find_element(*self.WISHLIST).click()
 
 

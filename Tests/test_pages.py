@@ -8,7 +8,7 @@ from Pages.FavoritePage import FavoritePage
 
 # using python unittest
 # Geckodriver copied to ExternalLib/Scripts/Geckodriver.exe
-# You can change it with your favorite driver.
+# You can change it with your favorite browser.
 
 
 class BaseTest(unittest.TestCase):
@@ -71,6 +71,7 @@ class BaseTest(unittest.TestCase):
         driver = self.driver
         wishlist = Homepage(driver)
         wishlist.clickWishlist()
+        assert "istek-listelerim" in driver.current_url
 
     ## Choose Favorites List in your All lists.
     def test009_goToFavorites(self):
@@ -78,6 +79,8 @@ class BaseTest(unittest.TestCase):
         favorites = FavoritePage(driver)
         favorites.clickFavoritePage()
         favorites.checkFavorites()
+        assert "hesabim/favorilerim" in driver.current_url
+
 
     ## Delete product from your favorite list.
     def test010_deleteItem(self):
@@ -85,5 +88,5 @@ class BaseTest(unittest.TestCase):
         delItem = FavoritePage(driver)
         delItem.deleteItem()
 
-    # if __name__ == '__main__':
-    #     unittest.main()
+
+

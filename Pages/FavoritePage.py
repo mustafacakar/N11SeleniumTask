@@ -31,6 +31,12 @@ class FavoritePage():
         driver = self.driver
         driver.find_element(*self.DELETEBUTTON).click()
         driver.find_element(*self.CONFIRM_BUTTON).click()
-
+        try:
+            driver.find_element(*self.DELETEBUTTON)
+            print("Favori list is not empty")
+            assert False
+        except :
+            print("Favori list is empty ")
+            assert True
 
 
