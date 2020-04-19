@@ -18,5 +18,5 @@ python <module-name.py>
 ```
 **If you want to run it just a class, you should type:**
 ```
-python <module-name.py> <class-name> 
+python -m unittest test_pages.BaseTest
 ```
