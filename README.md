@@ -2,7 +2,7 @@
 N11 Automation Task. Using Selenium and Python. 
 Page Object model and python unittest.
 
-  Task Steps
+  **Task Steps**
 - Open To n11.com
 - Login with valid user.
 - Search 'samsung'
